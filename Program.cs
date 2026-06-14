@@ -1,9 +1,7 @@
 /************************************************************
  * Name: Francis Hampton
- * Date: 6/7/2026
- * Assignment: Pantry Fairy – Week 4 Database Integration
- * Purpose: Demonstrates SQLite CRUD and LINQ for Recipes,
- *          Ingredients, and GroceryItems.
+ * Date: 6/14/26
+ * Assignment: Pantry Fairy – Week 5 Final Touches
  ************************************************************/
 
 using System.Data.SQLite;
@@ -14,11 +12,11 @@ public class Program
     public static void Main(string[] args)
     {
         Console.WriteLine("----------------------------------------------------");
-        Console.WriteLine("Week 4 Project – The Pantry Fairy");
+        Console.WriteLine("The Pantry Fairy");
         Console.WriteLine("Created by: Francis Hampton");
         Console.WriteLine("----------------------------------------------------");
-        Console.WriteLine("Welcome! This demo shows SQLite CRUD operations for recipes,");
-        Console.WriteLine("ingredients, and grocery items.\n");
+        Console.WriteLine("Welcome! This my completed C# program. This application will show a range of ways ");
+        Console.WriteLine("to handle recpies, ingredients, and grocery items.\n");
 
         const string dbName = "PantryFairy.db";
         SQLiteConnection conn = SQLiteDatabase.Connect(dbName);
@@ -116,7 +114,7 @@ public class Program
             allItems = GroceryItemDB.GetAllItems(conn);
             PrintGroceryItems(allItems);
 
-            Console.WriteLine("\nEnd of Week 4 demonstration.");
+            Console.WriteLine("\nEnd of my Final Week demonstration.");
         }
     }
 
